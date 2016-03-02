@@ -1,0 +1,16 @@
+﻿<ion-view view-title="Lot Validation">
+    <ion-content class="padding">
+        <ion-refresher on-refresh="refresh(true)" spinner="android"></ion-refresher>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input ng-model="data.lot" type="text" style="font-family: monospace;" placeholder="Lot Number">
+            </label>
+            <button ng-click="Submit()" class="button button-block button-positive">
+                Validate Lot
+            </button>
+            <div ng-bind="data.result" ng-class="data.style">
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

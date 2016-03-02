@@ -1,0 +1,21 @@
+﻿body {
+    font-family: monospace;
+}
+
+.Error {
+    color: red;
+    font-size: large;
+    font-weight: 500;
+}
+
+.Success {
+    color: darkgreen;
+    font-size: large;
+    font-weight: 500;
+}
+
+.Fail {
+    color: orange;
+    font-size: large;
+    font-weight: 500;
+}

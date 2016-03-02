@@ -1,0 +1,19 @@
+﻿<ion-view view-title="Camstar Login">
+    <ion-content class="padding">
+        <ion-refresher on-refresh="refresh(true)" spinner="android"></ion-refresher>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input ng-model="data.username" type="text" placeholder="Username">
+            </label>
+            <label class="item item-input">
+                <input ng-model="data.password" type="password" placeholder="Password">
+            </label>
+            <button ng-click="Submit()" class="button button-block button-positive">
+                Login
+            </button>
+            <div ng-bind="data.result" ng-class="data.style">
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
